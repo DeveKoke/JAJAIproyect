@@ -1,0 +1,160 @@
+/*
+#1 html
+#2 body
+#3 header
+#4 nav
+#5 article
+#6 aside
+#7 footer
+#8 versión mobile */
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+/* #1 */
+html {
+    background-color: rgb(16, 94, 90);
+    box-sizing: border-box;
+
+}
+
+/* INSERTAR VIDEO A PANTALLA COMPLETA */
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;}
+@media (min-aspect-ratio:16/9){.back-video{width: 100%; height: auto;}}
+@media (max-aspect-ratio:16/9){.back-video{width: auto; height: 100%;}}
+
+
+h1 {
+    color: rgb(223, 31, 17);
+    font-family: itim;
+    font-size: 3rem;
+
+
+}
+/* #2 */
+body{
+    width: 100% ;
+    height: 60%;
+ 
+}
+
+/* #3 */
+/* header */
+
+
+/* #4 */
+nav{width: 100%;
+    position: relative;
+    padding: 0.7em 0em;
+    margin-top: 0.1rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content:space-between; 
+
+}
+nav ul{
+    float: left;
+    display: flex;
+    justify-content: left;
+}
+
+nav li {list-style-type: none;
+    
+ 
+}
+nav img {
+    width: 40px;
+    margin: 8px;
+    padding: 8px 0px;
+    cursor: pointer;
+}
+
+nav img:hover {
+    transition: width 0.3s ease-out;
+    width: 56px;
+    padding: 0px 0;
+    border: none;
+}
+nav button {float: right;
+    border-style: solid;
+    background-color: rgb(16, 94, 90); 
+    border-color: aquamarine;
+    font-family: itim, sans-serif;
+    font-size: medium;
+    color: #F4D680;
+    height: 40px;
+    width: 160px;
+    margin-right: 3rem;
+    border-radius: 20px;
+    transition: box-shadow 0.3 ease;
+
+}
+nav button:hover {
+    background-color: #F4D680 ;
+    color: rgb(16, 94, 90);
+    border-color: rgb(16, 94, 90);
+    cursor: pointer;
+}
+nav button:active {
+    box-shadow: 0.2rem 0.2rem 1rem  rgb(109, 109, 109);
+} 
+
+/* #5 */
+/* article */
+
+article {
+    clear: both;
+}
+
+#logohome{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 30px;
+    border: 9px solid  #F4D680;
+}
+
+.h1home{    
+    color: #F4D680;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.button {    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-style: solid;
+    background-color: rgb(16, 94, 90); 
+    border-color: aquamarine;
+    color: #F4D680;
+    font-family: itim, sans-serif;
+    font-size: medium;
+    height: 40px;
+    width: 160px;
+    border-radius: 20px;
+    transition: box-shadow 0.3 ease;
+
+}
+.button:hover {
+    background-color: #F4D680 ;
+    color: rgb(16, 94, 90);
+    border-color: rgb(16, 94, 90);
+    cursor: pointer;
+}
+.button:active {
+    box-shadow: 0.2rem 0.2rem 1rem  rgb(109, 109, 109);
+} 
+article a{    font-family: itim, sans-serif;
+    color: #F4D680;
+    font-size: medium;
+text-decoration: none;}
+article a:hover{
+    color: rgb(16, 94, 90) ;
+}
